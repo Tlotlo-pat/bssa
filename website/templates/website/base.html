@@ -1,0 +1,185 @@
+{% load static %}
+{% load sass_tags %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Arcana by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href={% static 'css/main.css' %}/>
+		<link rel="stylesheet" href={% static 'css/simplefooter.css' %}/>
+		<link href={% static 'sass/main.scss' %} rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href={% static 'css/footer.css' %}>
+
+	<style>
+	
+	</style>
+	</head>
+	<body class="is-preload">
+			
+		<div id="page-wrapper">
+	  
+			<!-- Header -->
+			 <div class = "transparent">
+				<div id="header">
+                
+					<!-- Logo -->
+					<div class = "diamond">
+						<div class = "dia">
+			 <div class = logot>
+							<a href="{% url 'website:home' %}" ><img src= "{% static "website/gal6.jpg" %}" height= "100px";
+								width= "150px"; alt="bssa logo" id="logo"></a>
+							</div>
+						</div>
+					</div>
+					<div class="iconss">
+						  
+							<header class="ico" >
+								
+								<a href="https://www.facebook.com/Botswana-Swimming-Sports-Association-314724768664061/?epa=SEARCH_BOX" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="https://www.instagram.com/botswana_swimming/" class="fa fa-instagram"></a>
+							
+							</header>
+						</div>
+					<!-- Nav -->
+						<nav id="nav">
+							
+							<ul>
+								<li class="current"><a href="{% url 'website:home' %}">Home</a></li>
+								<li>
+									<a href="#">About BSSA</a>
+									<ul>
+										<li><a href="{% url 'website:history' %}">History</a></li>
+										<li><a href="{% url 'website:committee' %}">Committiee</a></li>
+										<li><a href="{% url 'website:gallery' %}">Gallery</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Disciplines</a>
+									<ul>
+											<li><a href="{% url 'website:categories' %}">Swimming Categories</a></li>
+									</ul>
+								</li>
+								<li><a href="{% url 'website:events' %}">Events</a></li>
+								<li><a href="{% url 'website:results' %}">Results</a></li>
+								<li><a href="{% url 'website:learntoswim' %}">Learn to Swim</a></li>
+								<li><a href="{% url 'website:news' %}">News</a></li>
+								<li><a href="#">Membership</a>
+									<ul>
+											<li><a href="{% url 'website:services' %}">Membership Services</a></li>
+											<li><a href="{% url 'website:findclub' %}">Find a club</a></li>
+									</ul>
+								</li>
+								<li><a href="{% url 'website:contact' %}">Contact Us</a></li>
+							</ul>
+						</nav>
+
+				</div>
+				</div>
+			<br>	<br>	<br>
+			<br>	<br>	<br>
+			<br>	<br>	<br>
+			<br>	
+		
+           <!-- Banner -->
+              <section id="banner">
+	             <header>
+		           <h2>Botswana Swimming Sport Association: <em> is the national governing body for the sport of swimming in Botswana</em></h2>
+		           <a href="{% url 'website:history' %}" class="button">Learn More</a>
+	             </header>
+              </section>
+				<br>
+				
+              {% block content %}
+              {% endblock %}
+
+	
+		
+		<br>
+		<br>
+		<br>
+		<br>
+	 <div id = footer>
+		<div class="row1">
+			<!---
+		<center><h3><strong>AFFILIATIONS</strong></h3></center>
+		
+		<div class="column">
+								
+			<img src="{% static "website/fina.png" %}" alt="fina" >
+		  </div>
+		  <div class="column">
+			
+			<img src="{% static "website/bnsc.png" %}"  alt="bnsc" >
+		  </div>
+		  <div class="column">
+		   
+			<img src="{% static "website/bnoc.png" %}" alt="bnoc" >
+		</div>
+		
+		<div class="column">
+			
+			<img src="{% static "website/cana.jpg" %}" alt="cana">
+		</div>-->
+		
+		
+				<footer id ="foot">
+					<div class="container">
+							<div class="inner-container">
+								<h2 class="text-uppercase">Quick Links</h2>
+					
+							<ul class="list">
+							  <li>
+								<a href="#!">About Us</a>
+							  </li>
+							  <li>
+								<a href="#!">BSSA Executive Committee</a>
+							  </li>
+							  <li>
+								<a href="#!">BSSA National Selection Gala</a>
+							  </li>
+							  <li>
+								<a href="#!">Events</a>
+							  </li>
+							</ul>
+				<!--
+					<div id = "contact">
+									<h3>Contact</h3>
+									<h6>Address:</h6>
+									<p>P O Box 163</p>
+									<p>Gaborone</p>
+									<h6>Telephone/Fax:</h6>
+									<p>+267 71631166/+267 3904193</p>
+									<p></p>
+									<h6>Email:</h6>
+									<p><a href="mailto:someone@example.com">botswanaswimming@gmail.com</a></p>
+												
+					</div>		-->
+					<div class="social">
+						<a href="https://www.facebook.com/Botswana-Swimming-Sports-Association-314724768664061/?epa=SEARCH_BOX" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com/botswana_swimming/" class="fa fa-instagram"></a>
+					</div>
+					<div class="footer-copyright">
+								<p>© Botswana Swimming Sports Association</p>
+							</div>
+						</div>
+					</div>
+					</footer>
+		</div>
+		<!-- Scripts -->
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+        <script src="{% static 'js/browser.min.js' %}"></script>
+        <script src="{% static 'js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'js/util.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>

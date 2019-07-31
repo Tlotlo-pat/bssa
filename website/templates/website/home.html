@@ -1,0 +1,108 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+       
+			<!-- Highlights -->
+			<div id="back">
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<h2>Recent News</h2>
+									<a href="#" class="image left"><img src="{% static "website/news.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>All the best to our Swimmers going ! 🇧🇼</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>09/07/2019</p>
+										<a href="#" class="button">Read More</a>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<h2>Upcoming Events</h2>
+									<a href="#" class="image left"><img src="{% static "website/news1.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>The 18th FINA World Championships Gwangju 2019  Jul. 12-28, 2019</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>25/10/2019</p>
+										<a href="#" class="button">Read More</a> <br><br>
+										<a href="#" class="button">More Events</a>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="{% static "website/news1.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>Check out the CANA Swim Website for up to date information. Botswana falls under Zone 4</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>08/07/2019</p>		
+										<a href="#" class="button">Read More</a>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+									<div class="box post">
+											<h2>Recent Video Highlights</h2>
+											<video width="320" height="240" controls>
+													<source src="{% static "website/swim8.mp4" %}" type="video/mp4">
+													<source src="movie.ogg" type="video/ogg">
+													Your browser does not support the video tag.
+												
+											</video>
+											
+									</div>
+							</section>
+						
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- Gigantic Heading -->
+		<!-- <section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Are you ready to continue your quest?</h2>
+							<a href="#" class="button">Insert Coin</a>
+						</header>
+					</div>
+				</section>-->
+
+
+			<!-- search bar-->
+			
+			
+									<!-- Search bar-->
+								    <div id= sea>
+									<div class="s01" >
+											<form>
+										       
+											  <fieldset>
+												<center><h2>Find Pool or Club near you!</h2></center>
+											  </fieldset>
+											  <div class="inner-form">
+												<div class="input-field second-wrap">
+												 <center> <input id="location" type="text" placeholder="location" /></center>
+
+												</div><br><br>
+												<div class="input-field third-wrap">
+												  <center><button class="btn-search" type="button">Search</button></center>
+												</div>
+											  </div>
+											 
+											</form>
+										 </div>
+								    </div>
+			<!-- CTA -->
+		
+			
+		
+	         
+ 
+{% endblock %}

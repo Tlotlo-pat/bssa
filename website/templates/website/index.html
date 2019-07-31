@@ -1,0 +1,149 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+		
+			<!-- Highlights -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-paper-plane"></i>
+									<h3>This Is Important</h3>
+									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-pencil-alt"></i>
+									<h3>Also Important</h3>
+									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+									<!-- Search bar-->
+									<div class="s01">
+											<form>
+											  <fieldset>
+												<h3>Find Pool or Club near you!</h3>
+											  </fieldset>
+											  <div class="inner-form">
+												<div class="input-field first-wrap">
+												  <input id="search" type="text" placeholder="Pool or Club?" />
+												</div><br><br>
+												<div class="input-field second-wrap">
+												  <input id="location" type="text" placeholder="location" />
+												</div><br><br>
+												<div class="input-field third-wrap">
+												  <button class="btn-search" type="button">Search</button>
+												</div>
+											  </div>
+											</form>
+										 </div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+							<h2>Connect With BSSA on Social Media</h2>
+							<p> “Swimming. I’m lovin’ it.”</p>
+							<a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-google"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+						</header>
+					</div>
+				</section>
+
+			<!-- Posts -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<h2>Recent News</h2>
+									<a href="#" class="image left"><img src="{% static "website/news.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>The First Thing</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>09/07/2019</p>
+										<a href="#" class="button">Read More</a>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<h2>Upcoming Events</h2>
+									<a href="#" class="image left"><img src="{% static "website/news1.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>The Second Thing</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>25/10/2019</p>
+										<a href="#" class="button">Read More</a> <br><br>
+										<a href="#" class="button">More Events</a>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="{% static "website/news1.jpg" %}" alt="" /></a>
+									<div class="inner">
+										<h3>The Third Thing</h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<p>08/07/2019</p>		
+										<a href="#" class="button">Read More</a>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+									<div class="box post">
+											<h2>Recent Video Highlights</h2>
+											<video width="320" height="240" controls>
+													<source src="{% static "website/swim.mp4" %}" type="video/mp4">
+													<source src="movie.ogg" type="video/ogg">
+													Your browser does not support the video tag.
+											</video>
+									</div>
+							</section>
+						
+						</div>
+					</div>
+				</section>
+
+			<!-- CTA -->
+	           <section >
+					<div class="row">
+							<center><h2>AFFILIATIONS</h2></center>
+							  <div class="column">
+								
+								<img src="{% static "website/fina.png" %}" alt="fina" >
+							  </div>
+							  <div class="column">
+								
+								<img src="{% static "website/bnsc.png" %}"  alt="bnsc" >
+							  </div>
+							  <div class="column">
+							   
+								<img src="{% static "website/bnoc.png" %}" alt="bnoc" >
+							</div>
+							<div class="column">
+								
+								<img src="{% static "website/wasbo.png" %}" alt="wasbo">
+							</div>
+							<div class="column">
+								
+								<img src="{% static "website/cana.jpg" %}" alt="cana">
+							</div>
+							
+							</div>
+				</section> 
+{% endblock %}
